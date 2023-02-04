@@ -1,0 +1,933 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sentinel faq",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "brushTeeth",
+          "slots": [
+            {
+              "name": "t",
+              "type": "teethslot"
+            }
+          ],
+          "samples": [
+            "Can I brush  {t} on day of surgery",
+            "{t}",
+            "Can I brush my teeth on day",
+            "Can I brush my teeth on day of surgerry",
+            "Can I {t} on day of surgery",
+            "Can I brush my teeth on day of surgery "
+          ]
+        },
+        {
+          "name": "drinkAlcohol",
+          "slots": [
+            {
+              "name": "d",
+              "type": "drinkAlcoholslot"
+            }
+          ],
+          "samples": [
+            "{d}",
+            "Can I {d} before the procedure",
+            "Can I {d}",
+            "Can I drink alcohol before the procedure"
+          ]
+        },
+        {
+          "name": "Smoke_Before_Procedure",
+          "slots": [
+            {
+              "name": "s",
+              "type": "smokeProcedure"
+            }
+          ],
+          "samples": [
+            "{s}",
+            "Can i  {s} before procedures ",
+            "Can I smoke before procedure"
+          ]
+        },
+        {
+          "name": "should_i_not_wear",
+          "slots": [
+            {
+              "name": "wp",
+              "type": "wearProcedure"
+            }
+          ],
+          "samples": [
+            "{wp}",
+            "What should I not wear to the {wp} ",
+            "What should I not wear to the procedures",
+            "should I not wear to {wp} ",
+            "What should I not wear to the procedure "
+          ]
+        },
+        {
+          "name": "bringClothes",
+          "slots": [
+            {
+              "name": "bc",
+              "type": "bringcloth"
+            }
+          ],
+          "samples": [
+            "{bc}",
+            "Can I bring my own {bc}",
+            "Can I bring my own clothes"
+          ]
+        },
+        {
+          "name": "safeValuables",
+          "slots": [
+            {
+              "name": "vlu",
+              "type": "valuableSlot"
+            }
+          ],
+          "samples": [
+            "{vlu}",
+            "Do you provide a safe for {vlu}",
+            "Do you provide a safe for my valuables "
+          ]
+        },
+        {
+          "name": "medications",
+          "slots": [
+            {
+              "name": "md",
+              "type": "medicationSlot"
+            }
+          ],
+          "samples": [
+            "{md}",
+            "Can I continue {md}",
+            "Can I continue my medications"
+          ]
+        },
+        {
+          "name": "dietPills",
+          "slots": [
+            {
+              "name": "dp",
+              "type": "dietpill"
+            }
+          ],
+          "samples": [
+            "{dp}",
+            "Can I continue to take my {dp}",
+            "Can I continue to take my diet pills"
+          ]
+        },
+        {
+          "name": "bringFood",
+          "slots": [
+            {
+              "name": "food",
+              "type": "bringfoodslot"
+            }
+          ],
+          "samples": [
+            "{food}",
+            "Can I bring my {food}",
+            "Can I bring my own food"
+          ]
+        },
+        {
+          "name": "visitors",
+          "slots": [
+            {
+              "name": "visit",
+              "type": "visitorsSlot"
+            }
+          ],
+          "samples": [
+            "{visit}",
+            "How soon can I have {visit}",
+            "How soon can I have visitors"
+          ]
+        },
+        {
+          "name": "dayProcedure",
+          "slots": [
+            {
+              "name": "day",
+              "type": "daayprocedure"
+            }
+          ],
+          "samples": [
+            "What do I need to bring  {day} on day of procedures",
+            "do I need to bring  {day} on day of procedure",
+            "What do I need to bring on {day} day of procedures",
+            "What do I need to bring on day of procedures",
+            "What do I need to bring on day of procedure"
+          ]
+        },
+        {
+          "name": "driveMyself",
+          "slots": [
+            {
+              "name": "drive",
+              "type": "drive"
+            }
+          ],
+          "samples": [
+            "can i {drive} a {drive} {drive}",
+            "can i {drive} a {drive}",
+            "can i drive myself",
+            "Can I drive with myself",
+            "Can I drive a {drive} myself"
+          ]
+        },
+        {
+          "name": "familyMember",
+          "slots": [
+            {
+              "name": "member",
+              "type": "needafamily"
+            }
+          ],
+          "samples": [
+            "Do I need a {member}  to be with me",
+            "Do I need a family  guardian  to be with me",
+            "Do I need a family member to be with me"
+          ]
+        },
+        {
+          "name": "afterProcedure",
+          "slots": [
+            {
+              "name": "ap",
+              "type": "aftertheprocedure"
+            }
+          ],
+          "samples": [
+            "{ap}",
+            "What should I expect {ap} ",
+            "What should I expect after the {ap}",
+            "What should I expect after the procedures"
+          ]
+        },
+        {
+          "name": "relyON",
+          "slots": [
+            {
+              "name": "rely",
+              "type": "relyon"
+            }
+          ],
+          "samples": [
+            "Do I need to rely on somebody at home",
+            "Do I need to rely on somebody after the procedure  ",
+            "{rely}",
+            "Do I need to rely on {rely}",
+            "Do I need to rely on somebody",
+            "after the procedure Do I need to rely on {rely}",
+            "Do I need to rely on {rely} after the procedure",
+            "Do I need to rely on {rely} after the procedure at home",
+            "Do I need to rely on somebody after the procedure at home"
+          ]
+        },
+        {
+          "name": "old_medication",
+          "slots": [
+            {
+              "name": "old",
+              "type": "oldmedication"
+            }
+          ],
+          "samples": [
+            "When can I resume my {old}",
+            "When can I resume my old medication"
+          ]
+        },
+        {
+          "name": "emergency",
+          "slots": [
+            {
+              "name": "emergencyy",
+              "type": "emergency"
+            }
+          ],
+          "samples": [
+            "Who do I contact in an {emergencyy}",
+            "{emergencyy}",
+            "Who do I {emergencyy}",
+            "Who do I contact in an emergency"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "brush tooth",
+                "synonyms": [
+                  "brush tooth"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "brush teeth",
+                "synonyms": [
+                  "brush teeth"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tooth",
+                "synonyms": [
+                  "tooth"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "teeth",
+                "synonyms": [
+                  "teeth"
+                ]
+              }
+            }
+          ],
+          "name": "teethslot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "scotch",
+                "synonyms": [
+                  "scotch"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "whiskey",
+                "synonyms": [
+                  "whiskey"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "beer",
+                "synonyms": [
+                  "beer"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "drink liquor",
+                "synonyms": [
+                  "drink liquor"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "drink alchohol",
+                "synonyms": [
+                  "drink alchohol"
+                ]
+              }
+            }
+          ],
+          "name": "drinkAlcoholslot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cigar",
+                "synonyms": [
+                  "cigar"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cigarettes",
+                "synonyms": [
+                  "cigarettes"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "smoking",
+                "synonyms": [
+                  "smoking"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "smoke",
+                "synonyms": [
+                  "smoke"
+                ]
+              }
+            }
+          ],
+          "name": "smokeProcedure"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "rings",
+                "synonyms": [
+                  "rings"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "earrings",
+                "synonyms": [
+                  "earrings"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "chain",
+                "synonyms": [
+                  "chain"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "jewelry",
+                "synonyms": [
+                  "jewelry"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "personal items",
+                "synonyms": [
+                  "personal items"
+                ]
+              }
+            }
+          ],
+          "name": "wearProcedure"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "sweaters",
+                "synonyms": [
+                  "sweaters"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tops",
+                "synonyms": [
+                  "tops"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pants",
+                "synonyms": [
+                  "pants"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "clothes",
+                "synonyms": [
+                  "clothes"
+                ]
+              }
+            }
+          ],
+          "name": "bringcloth"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "store jewelry",
+                "synonyms": [
+                  "store jewelry"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "store valuables",
+                "synonyms": [
+                  "store valuables"
+                ]
+              }
+            }
+          ],
+          "name": "valuableSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": " drugs",
+                "synonyms": [
+                  " drugs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "my drugs",
+                "synonyms": [
+                  "my drugs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pills",
+                "synonyms": [
+                  "pills"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "my pills",
+                "synonyms": [
+                  "my pills"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "my medications",
+                "synonyms": [
+                  "my medications"
+                ]
+              }
+            }
+          ],
+          "name": "medicationSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": " fat reduction pills",
+                "synonyms": [
+                  "reduction pills",
+                  " fat reduction pills"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "fat pills",
+                "synonyms": [
+                  "fat pills"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "diet pills",
+                "synonyms": [
+                  "diet pills"
+                ]
+              }
+            }
+          ],
+          "name": "dietpill"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Italian food",
+                "synonyms": [
+                  "Italian food"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Indian food",
+                "synonyms": [
+                  "Indian food"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Chinese food",
+                "synonyms": [
+                  "Chinese food"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": " Mexican food",
+                "synonyms": [
+                  " Mexican food"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ethnic food",
+                "synonyms": [
+                  "ethnic food"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dessert",
+                "synonyms": [
+                  "dessert"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "meals",
+                "synonyms": [
+                  "meals"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "custom food",
+                "synonyms": [
+                  "custom food"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "food",
+                "synonyms": [
+                  "food"
+                ]
+              }
+            }
+          ],
+          "name": "bringfoodslot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "visitation",
+                "synonyms": [
+                  "visitation"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "visit",
+                "synonyms": [
+                  "visit"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "visitors",
+                "synonyms": [
+                  "visitors"
+                ]
+              }
+            }
+          ],
+          "name": "visitorsSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": " Passport",
+                "synonyms": [
+                  " Passport"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "drivers license",
+                "synonyms": [
+                  "drivers license"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "identification",
+                "synonyms": [
+                  "identification"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family contact",
+                "synonyms": [
+                  "family contact"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family member",
+                "synonyms": [
+                  "family member"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "insurance",
+                "synonyms": [
+                  "insurance"
+                ]
+              }
+            }
+          ],
+          "name": "daayprocedure"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "self drive",
+                "synonyms": [
+                  "self drive"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "driving",
+                "synonyms": [
+                  "driving"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "car",
+                "synonyms": [
+                  "cars",
+                  "car"
+                ]
+              }
+            }
+          ],
+          "name": "drive"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "aunt",
+                "synonyms": [
+                  "aunt"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "uncle",
+                "synonyms": [
+                  "uncle"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cousin",
+                "synonyms": [
+                  "cousins",
+                  "cousin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "brother",
+                "synonyms": [
+                  "brother"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "parents",
+                "synonyms": [
+                  "parents"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sister",
+                "synonyms": [
+                  "sisters"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family member",
+                "synonyms": [
+                  "family member"
+                ]
+              }
+            }
+          ],
+          "name": "needafamily"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "post procedure experience",
+                "synonyms": [
+                  "post procedure experience",
+                  "post procedure"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "expectations",
+                "synonyms": [
+                  "expectations"
+                ]
+              }
+            }
+          ],
+          "name": "aftertheprocedure"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "support person",
+                "synonyms": [
+                  "support person"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "reliance",
+                "synonyms": [
+                  "reliance"
+                ]
+              }
+            }
+          ],
+          "name": "relyon"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "medication adherence",
+                "synonyms": [
+                  "medication adherence"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "medication resumption",
+                "synonyms": [
+                  "medication resumption"
+                ]
+              }
+            }
+          ],
+          "name": "oldmedication"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "emergency",
+                "synonyms": [
+                  "emergency"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "emergency contact",
+                "synonyms": [
+                  "emergency contact"
+                ]
+              }
+            }
+          ],
+          "name": "emergency"
+        }
+      ]
+    }
+  },
+  "version": "29"
+}
